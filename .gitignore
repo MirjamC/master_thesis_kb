@@ -20,3 +20,5 @@ notes*
 *.synctex.gz
 *.toc
 *.tex
+
+thesis.py
