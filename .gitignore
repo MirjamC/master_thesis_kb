@@ -8,20 +8,18 @@ possible_subjects
 reporting
 rules_and_regulations
 tei_reader
-delivery_kb
 
 journal*
-notes*
+thesis.pdf
+thesis.tex
 
 *.aux
 *.bbl
 *.bib
 *.blg
 *.log
-*.pdf
 *.synctex.gz
 *.toc
-*.tex
 
 thesis.py
 explore.ipynb
