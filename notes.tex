@@ -163,6 +163,10 @@
 		Note that this is only useful if we have access to the ground truth of the text which we generally do not have (otherwise we need not apply OCR in the first place). However, perhaps one can find a way in which this quick-fix is useful in combination with other methods as well.
 		\\ \\
 		Two current issues are that ground truth and OCRed texts are not one-to-one comparable since there are spacing issues (e.g. ``\EUR{7.50}" in the OCRed text versus ``\EUR{} 7.50" in the ground truth text) as well as hyphens appearing non-consistently (mostly hyphens to break a word to the new line). A quick fix to this is to simply remove all spacing and hyphens and then checking the similarity of the OCRed text with its ground truth text, for example with a distance metric like the Levenshtein distance.
+		
+		\item \textbf{Regression on count of various errors}
+		\\ \\
+		This method is applicable if we have labelled data and is a simple approach. One should first construct several errors, such as character error rate, word error rate, etcetera. Then, we can perform a simple regression (ordered logit/probit) or classification algorithm (e.g. $K$-means).
 	\end{enumerate}	
 	
 	%Bibliography	
